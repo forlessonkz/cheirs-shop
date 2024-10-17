@@ -1,0 +1,26 @@
+[
+    {
+        "id": "001",
+        "title": "Modern Cheri 001",
+        "price": 500,
+        "images": "/images/products/001.png"
+    },
+    {
+        "id": "002",
+        "title": "Modern Cheri 002",
+        "price": 1000,
+        "images": "/images/products/001.png"
+    },
+    {
+        "id": "003",
+        "title": "Modern Cheri 003",
+        "price": 100,
+        "images": "/images/products/001.png"
+    },
+    {
+        "id": "004",
+        "title": "Modern Cheri 004",
+        "price": 300,
+        "images": "/images/products/001.png"
+    }
+]

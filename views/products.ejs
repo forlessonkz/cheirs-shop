@@ -2,6 +2,24 @@
 <html lang="en">
 <%- include('./partials/head.ejs', {title: 'Products'}) %>
 <body>
-
+    <%- include('./partials/header.ejs') %>
+    <div class="main base-width base-right-left-padding">
+        <div class="page-header-container">
+            <%- include('./partials/pageHeader.ejs', {title: 'Cheirs'}) %>
+            <a href="/new">
+                <button class="add-new-product btn">
+                    <img src="/images/icons/add-btn-icon.png" alt="">
+                    Add new product
+                </button>
+            </a>
+        </div>
+        
+        <div class="products-list">
+            <%- include('./partials/productItem.ejs') %>
+            <%- include('./partials/productItem.ejs') %>
+            <%- include('./partials/productItem.ejs') %>
+            <%- include('./partials/productItem.ejs') %>
+        </div>
+    </div>
 </body>
 </html>
