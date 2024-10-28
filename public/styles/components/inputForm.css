@@ -1,0 +1,30 @@
+.new-product input::placeholder, 
+.edit-product input::placeholder {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.input-form-container input {
+    padding: 15px 0 10px 20px;
+    width: 614px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+}
+
+
+
+.input-form-container > .add-btn {
+    width: 614px;
+    display: flex;
+    justify-content: center;
+
+    background-color: #FE6769;
+    padding: 10px 0;
+    border-radius: 7px;
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}

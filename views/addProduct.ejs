@@ -2,6 +2,18 @@
 <html lang="en">
 <%- include('./partials/head.ejs', {title: 'New Product'}) %>
 <body>
-    
+    <%- include('./partials/header.ejs', {title: 'Add product'}) %>
+    <div class="main base-width base-right-left-padding">
+        <div class="page-header-container">
+            <%- include('./partials/pageHeader.ejs', {title: 'Add product'}) %>
+        </div>
+        <div class="new-product input-form-container">
+            <%- include('./partials/input.ejs', {placeholder: 'Product title', type: ''}) %>
+            <%- include('./partials/input.ejs', {placeholder: 'Price', type: ''}) %>
+            <%- include('./partials/input.ejs', {placeholder: 'Discount', type: ''}) %>
+            <%- include('./partials/input.ejs', {placeholder: 'Images URL', type: ''}) %>
+            <%- include('./partials/btn', { icon: '', title: 'Add product'}) %>
+        </div>
+    </div>
 </body>
 </html>

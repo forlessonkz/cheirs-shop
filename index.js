@@ -25,6 +25,13 @@ app.get('/edit', (req, res) => {
     res.render('editProduct')
 })
 
+app.get('/productPage', (req, res) => {
+    res.render('productPage')
+})
+
+app.get('/error', (req, res) => {
+    res.render('error')
+})
 
 app.listen(PORT, () => {
     console.log(`Servet listening on PORT: ${PORT}`)

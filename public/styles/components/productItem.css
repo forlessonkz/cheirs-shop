@@ -41,7 +41,7 @@
     object-fit: cover;
 }
 
-.bottom {
+.bottom > .title-price-element {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +67,7 @@
     cursor: pointer;
 }
 
-.add-btn {
+.porduct-item > .add-btn {
     position: absolute;
     bottom: -35px;
     width: 70px;

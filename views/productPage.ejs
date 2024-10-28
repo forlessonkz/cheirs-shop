@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('./partials/head.ejs', {title: 'Product page   '}) %>
+<%- include('./partials/head.ejs', {title: 'Product page'}) %>
 <body>
-    
+    <%- include('./partials/header.ejs', {title: 'Modern Cheir'}) %>
+    <div class="main  base-width base-right-left-padding">
+        <div class="product-page-container">
+            <%- include('./partials/productMenu.ejs') %>
+            <div class="img-container">
+                <%- include('./partials/productActions.ejs', {disconut: 25}) %>
+                <%- include('./partials/productImg.ejs') %>
+            </div>
+            <div class="porduct-desription">
+                <%- include('./partials/titlePriceElement.ejs') %>
+                <%- include('./partials/btn.ejs', {title: 'Add to card', icon: '/images/icons/add-btn-icon.png'}) %>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
