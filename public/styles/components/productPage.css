@@ -5,6 +5,16 @@
 
 }
 
+.action-btn-container {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.action-btn-container > .menu-modal-window {
+    bottom: -100px;
+}
+
 .product-page-container > .product-menu {
     top: 0;
     right: 0;

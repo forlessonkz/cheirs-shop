@@ -70,3 +70,26 @@
     font-weight: 400;
     color: #0B1CB6;
 }
+
+.modal-window-btn {
+    width: 183px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 16px;
+    font-weight: 700;
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.menu-modal-window > .delete {
+    background-color: red;
+    color: #fff;
+}
+
+.menu-modal-window {
+    position: absolute;
+    right: 0;
+    bottom: -65px;
+}

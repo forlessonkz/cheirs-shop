@@ -5,7 +5,10 @@
     <%- include('./partials/header.ejs', {title: 'Modern Cheir'}) %>
     <div class="main  base-width base-right-left-padding">
         <div class="product-page-container">
-            <%- include('./partials/productMenu.ejs') %>
+            <div class="action-btn-container">
+                <%- include('./partials/productMenu.ejs') %>
+                <%- include('./partials/actionsBtn.ejs') %>
+            </div>
             <div class="img-container">
                 <%- include('./partials/productActions.ejs', {disconut: 25}) %>
                 <%- include('./partials/productImg.ejs') %>
