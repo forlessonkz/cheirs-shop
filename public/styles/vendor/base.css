@@ -93,3 +93,13 @@
     right: 0;
     bottom: -65px;
 }
+
+form > input {
+    display: block;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}

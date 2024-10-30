@@ -3,22 +3,27 @@
 <%- include('./partials/head.ejs', {title: 'Products'}) %>
 <body>
     <%- include('./partials/header.ejs', {title: 'Products'}) %>
-    <div class="main base-width base-right-left-padding">
-        <div class="page-header-container">
-            <%- include('./partials/pageHeader.ejs', {title: 'Cheirs'}) %>
-            <a href="/new">
-                <button class="add-new-product btn">
-                    <img src="/images/icons/add-btn-icon.png" alt="">
-                    Add new product
-                </button>
-            </a>
+    <div class="main base-width ">
+        <div class="base-right-left-padding">
+            <div class="page-header-container">
+                <%- include('./partials/pageHeader.ejs', {title: 'Cheirs'}) %>
+                <a href="/new">
+                    <button class="add-new-product btn">
+                        <img src="/images/icons/add-btn-icon.png" alt="">
+                        Add new product
+                    </button>
+                </a>
+            </div>
         </div>
-        
         <div class="products-list">
-            <%- include('./partials/productItem.ejs') %>
-            <%- include('./partials/productItem.ejs') %>
-            <%- include('./partials/productItem.ejs') %>
-            <%- include('./partials/productItem.ejs') %>
+            <% data.forEach(item => { %>
+                <%- include('./partials/productItem.ejs', {
+                    discount: item.discount, 
+                    title: item.title, 
+                    price: item.price, 
+                    images: item.images
+                })%>
+            <% }) %>
         </div>
     </div>
 </body>

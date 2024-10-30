@@ -1,9 +1,9 @@
 <div class="porduct-item">
     <div class="product-container">
-        <%- include('./productActions.ejs', {disconut: 25}) %>
-        <%- include('./productImg.ejs') %>
+        <%- include('./productActions.ejs', {discount: discount}) %>
+        <%- include('./productImg.ejs', {images: images}) %>
         <div class="bottom">
-            <%- include('./titlePriceElement.ejs') %>
+            <%- include('./titlePriceElement.ejs', {title: title, price: price}) %>
         </div>
         <%- include('./productMenu.ejs') %>
     </div>

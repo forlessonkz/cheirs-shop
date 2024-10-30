@@ -8,7 +8,7 @@
     margin-right: 70px;
 }
 
-.header-search > .input-form {
+.header-search > input {
     width: 340px;
     padding: 15px 20px;
     border-radius: 15px;
