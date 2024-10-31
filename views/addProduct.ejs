@@ -8,10 +8,10 @@
             <%- include('./partials/pageHeader.ejs', {title: 'Add product'}) %>
         </div>
         <form action="/new" method="POST" class="new-product input-form-container">
-            <%- include('./partials/input.ejs', {placeholder: 'Product title', type: 'String', name: 'title'}) %>
-            <%- include('./partials/input.ejs', {placeholder: 'Price', type: 'Number', name: 'price'}) %>
-            <%- include('./partials/input.ejs', {placeholder: 'Discount', type: 'Number', name: 'discount'}) %>
-            <%- include('./partials/input.ejs', {placeholder: 'Images URL', type: 'String', name: 'images'}) %>
+            <%- include('./partials/input.ejs', {placeholder: 'Product title', type: 'String', name: 'title', value: ''}) %>
+            <%- include('./partials/input.ejs', {placeholder: 'Price', type: 'Number', name: 'price', value: ''}) %>
+            <%- include('./partials/input.ejs', {placeholder: 'Discount', type: 'Number', name: 'discount', value: ''}) %>
+            <%- include('./partials/input.ejs', {placeholder: 'Images URL', type: 'String', name: 'images', value: ''}) %>
             <%- include('./partials/btn', { icon: '', title: 'Add product'}) %>
         </form>
     </div>

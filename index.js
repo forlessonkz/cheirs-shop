@@ -55,8 +55,25 @@ app.get('/new', (req, res) => {
     res.render('addProduct')
 })
 
-app.get('/edit', (req, res) => {
-    res.render('editProduct')
+app.get('/edit/:id', async (req, res) => {
+    const newBaseData = await newBase.findById(req.params.id)
+    console.log(newBaseData)
+    res.render('editProduct', {data: newBaseData})
+});
+
+app.post('/edit', async(req, res) => {
+    await newBase.updateOne(
+        {
+            _id: req.body.id
+        },
+        {
+            title: req.body.title,
+            discount: req.body.discount,
+            price: req.body.price,
+            images: req.body.images,
+        }
+    )
+    res.redirect('/products')
 })
 
 app.get('/productPage', (req, res) => {

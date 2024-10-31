@@ -26,7 +26,8 @@
 .products-list {
     padding-top: 15px;
     padding-bottom: 15px;
-
+    padding-left: 20px; 
+    padding-right: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -81,15 +82,18 @@
     font-size: 16px;
     font-weight: 700;
     background-color: rgba(248, 248, 248, 1);
+    color: #000;
 }
 
 .menu-modal-window > .delete {
     background-color: red;
     color: #fff;
+    
 }
 
 .menu-modal-window {
     position: absolute;
+    z-index: 100;
     right: 0;
     bottom: -65px;
 }

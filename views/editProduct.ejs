@@ -7,13 +7,14 @@
         <div class="page-header-container">
             <%- include('./partials/pageHeader.ejs', {title: 'Add product'}) %>
         </div>
-        <div class="edit-product input-form-container">
-            <%- include('./partials/input.ejs', {placeholder: 'Product title', type: ''}) %>
-            <%- include('./partials/input.ejs', {placeholder: 'Price', type: ''}) %>
-            <%- include('./partials/input.ejs', {placeholder: 'Discount', type: ''}) %>
-            <%- include('./partials/input.ejs', {placeholder: 'Images URL', type: ''}) %>
+        <form action="/edit" method="POST" class="edit-product input-form-container">
+            <input type="hidden" name="id" value="<%=  data._id%>">
+            <%- include('./partials/input.ejs', {placeholder: 'Product title', type: 'String', name: 'title', value: data.title, name: 'title'}) %>
+            <%- include('./partials/input.ejs', {placeholder: 'Price', type: 'Number', name: 'price', value: data.price, name: 'price'}) %>
+            <%- include('./partials/input.ejs', {placeholder: 'Discount', type: 'Number', name: 'discount', value: data.discount, discount: 'discount'}) %>
+            <%- include('./partials/input.ejs', {placeholder: 'Images URL', type: 'String', name: 'images', value: data.images, images: 'images'}) %>
             <%- include('./partials/btn', { icon: '', title: 'Edit product'}) %>
-        </div>
+        </form>
     </div>
 </body>
 </html>
