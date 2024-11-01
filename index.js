@@ -48,7 +48,6 @@ app.get('/', (req, res) => {
 
 app.get('/products', async (req, res) => {
     const data = await newBase.find()
-    console.log(data)
     res.render('products', {data})
 })
 app.get('/new', (req, res) => {
@@ -57,7 +56,7 @@ app.get('/new', (req, res) => {
 
 app.get('/edit/:id', async (req, res) => {
     const newBaseData = await newBase.findById(req.params.id)
-    console.log(newBaseData)
+
     res.render('editProduct', {data: newBaseData})
 });
 
@@ -74,6 +73,11 @@ app.post('/edit', async(req, res) => {
         }
     )
     res.redirect('/products')
+})
+
+app.delete('/delete/:id', async (req, res) => {
+    await newBase.deleteOne({_id: req.params.id});
+    res.status(200).send('ok');
 })
 
 app.get('/productPage', (req, res) => {

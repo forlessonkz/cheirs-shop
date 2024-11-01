@@ -22,3 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+function deleteItem(id) {
+    let result = axios.delete(`/delete/${id}`).then( res => location.reload())
+    console.log(result)
+}
